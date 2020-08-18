@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
-  def show
+  def index
+    users = User.all
 
+    render json: users
   end
 
   def create
@@ -27,6 +29,20 @@ class UsersController < ApplicationController
 
   def favorites
     
+  end
+
+  def leaderboard
+    leaders = User.top_users
+
+    render json: leaders
+  end
+
+  def stats
+    user = User.find(params[:id])
+
+    user_stats = user.user_stats
+
+    render json: user_stats
   end
 
   private

@@ -4,8 +4,12 @@ class GamesController < ApplicationController
     render json: games
   end
 
-  def show
+  def top_players
+    game = Game.find(params[:id])
 
+    players = game.top_players
+
+    render json: players
   end
 
   private
