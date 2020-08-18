@@ -9,9 +9,11 @@ class PlaySessionsController < ApplicationController
 
   end
 
-  def index
+  # def index
+  #   play_sessions = PlaySession.all
 
-  end
+  #   render json: play_sessions
+  # end
 
   private
 
