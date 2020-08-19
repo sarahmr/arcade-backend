@@ -5,16 +5,6 @@ class PlaySessionsController < ApplicationController
     render json: play_session
   end
 
-  def show
-
-  end
-
-  # def index
-  #   play_sessions = PlaySession.all
-
-  #   render json: play_sessions
-  # end
-
   private
 
   def play_session_params
