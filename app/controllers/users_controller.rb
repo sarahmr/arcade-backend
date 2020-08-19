@@ -11,11 +11,17 @@ class UsersController < ApplicationController
   end
 
   def update
-
+    user = User.find(params[:id])
+    user.update(name: params[:newName])
+    
+    render json: user
   end
 
   def destroy
+    user = User.find(params[:id])
+    user.destroy
 
+    render json: user
   end
 
   def login
@@ -25,10 +31,6 @@ class UsersController < ApplicationController
     else
       render json: {error: "Please register as a new user."}
     end
-  end
-
-  def favorites
-    
   end
 
   def leaderboard
