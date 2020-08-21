@@ -7,7 +7,7 @@ class Game < ApplicationRecord
   def top_players
     top_players_array = []
 
-    self.play_sessions.map { |play| 
+    self.play_sessions.each { |play| 
       if top_players_array.find { |player| player[:user] == play.user.name }
         hash = top_players_array.find { |player| player[:user] == play.user.name }
         hash[:wins] = play.user_win == true ? hash[:wins] += 1 : hash[:wins] += 0
@@ -16,7 +16,7 @@ class Game < ApplicationRecord
       end
     }
 
-    top = top_players_array.take(10)
+    top = top_players_array.sort_by { |user_hash| user_hash[:wins] }.reverse.take(10)
 
     top
   end
