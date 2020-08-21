@@ -28,7 +28,7 @@ Game.create([
   },
   {
     name: "Tic Tac Toe",
-    image: "https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,g=0.5x0.5,f=auto/85535e05d1f130b16751c8308cfbb19b.png"
+    image: "https://miro.medium.com/max/395/1*mIjIjWIUc45MQjLDVkOC-w.png"
   }
 ])
 
