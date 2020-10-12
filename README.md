@@ -4,7 +4,7 @@ Arcade is a single page application made with Javascript. Players can play custo
 
 Frontend: https://github.com/sarahmr/arcade-frontend
 
-[! Arcade Demo Video] (https://youtu.be/wPV7-hq8PW8)
+Demo video:
 
 
 [![Arcade Demo Video](http://img.youtube.com/vi/wPV7-hq8PW8/0.jpg)](http://www.youtube.com/watch?v=wPV7-hq8PW8)
